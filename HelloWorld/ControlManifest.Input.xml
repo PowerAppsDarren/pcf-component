@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <!-- 
+    Main control definition section
+    - namespace: Unique identifier grouping related components
+    - constructor: Class name that will be instantiated
+    - version: Versioning for your component (Semantic: Major.Minor.Patch)
+    - display-name-key: Localization key for control name
+    - description-key: Localization key for control description
+    - control-type: Type of control (standard: renders in div, virtual: no UI)
+  -->
+  <control 
+            namespace="SuperPowerLabs" 
+            constructor="HelloWorld" 
+            version="0.0.1" 
+            display-name-key="HelloWorld" 
+            description-key="HelloWorld description" 
+            control-type="standard" >
+    <!-- External service declaration section -->
+    <!-- If your component uses external services (APIs, etc.), set enabled="true" and list domains -->
+    <external-service-usage enabled="false">
+      <!-- Add external domains your component accesses here -->
+      <!--
+      <domain>api.example.com</domain>
+      <domain>cdn.someservice.com</domain>
+      -->
+    </external-service-usage>
+    
+    <!-- 
+      Property definitions section
+      Properties are data inputs that your control can receive from Power Apps
+      - name: Internal reference name used in code
+      - display-name-key: Localization key for UI label
+      - description-key: Localization key for description tooltip
+      - of-type: Data type (e.g., SingleLine.Text, Whole.None, etc.)
+      - usage: How property is used (bound: bidirectional, input: read-only)
+      - required: Whether property is mandatory for control to function
+    -->
+    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    
+    <!-- 
+      Resources section defines assets used by the component
+      - code: JavaScript/TypeScript files
+      - css: Stylesheet files
+      - resx: Resource/localization files
+      
+      The order attribute determines loading sequence (lower numbers load first)
+    -->
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- Additional resources can be uncommented as needed -->
+      <!-- <css path="css/HelloWorld.css" order="1" /> -->
+      <!-- <resx path="strings/HelloWorld.1033.resx" version="1.0.0" /> -->
+    </resources>
+    
+    <!-- 
+      Feature usage section declares which platform APIs your component needs
+      Uncomment required features based on your component's needs
+      This helps with permission management and user experience
+    -->
+    <!-- 
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

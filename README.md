@@ -1,14 +1,4 @@
-# README
+# Readme
 
-## Installing Needed Tools
+This is a readme file for this project. 
 
-- [Download Node & NPM](https://nodejs.org/en)
-- [PowerAppPower Platform Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode)
-
-## Verify Installations (and versions)
-
-```bash
-pac --version
-node --version
-npm --version
-```
