@@ -8,7 +8,7 @@
 ## Verify Installations (and versions)
 
 ```bash
-pac
+pac --version
 node --version
 npm --version
 ```
