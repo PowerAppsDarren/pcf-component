@@ -1,0 +1,15 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore log files
+*.log
+
+# Ignore local environment files
+.env
+
+# Ignore Dockerfile and docker-compose.yml for build context
+Dockerfile
+docker-compose.yml
+
+# Ignore scripts directory
+scripts/
