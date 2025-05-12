@@ -2,5 +2,5 @@
 
 ## Installing Needed Tools
 
-- https://nodejs.org/en
-- https://aka.ms/PowerAppsCLI
+- https://nodejs.org/en 
+- https://aka.ms/PowerAppsCLI 
