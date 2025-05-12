@@ -1,5 +1,6 @@
 # README
 
-## Installing Node.js and npm
+## Installing Needed Tools
 
 - https://nodejs.org/en
+- https://aka.ms/PowerAppsCLI
